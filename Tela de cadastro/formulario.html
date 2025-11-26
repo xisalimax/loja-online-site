@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastro do Usuário</title>
+</head>
+<body>
+  <h1>Cadastro do Usuário</h1>
+  <p>Complete suas informações</p>
+  <br>
+
+  <form action="formulario.html" method="post">
+    <fieldset><section class=" primeiro">
+      <legend>Informações Pessoais</legend></section>
+
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="nome" required>
+
+      <label for="sobrenome">Sobrenome:</label>
+      <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome" required>
+
+      <label for="data_nascimento">Data de Nascimento:</label>
+      <input type="date" name="data_nascimento" id="data_nascimento" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" placeholder="E-mail" required>
+
+      <label for="endereco">Endereço / Rua:</label>
+      <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+
+      <label for="Numero/Bloco">Numero/Bloco</label>
+      <input type="number/text" name="Numero/Bloco" id="Numero/Bloco" placeholder="Numero/Bloco">
+
+      <label for="Complemento">Complemento</label>
+      <input type="text" name="Complemento" id="Complemento" placeholder=" Complemento">
+
+      <label for="cep">CEP:</label>
+      <input type="number" name="cep" id="cep" placeholder="00000-000" pattern="\d{5}-?\d{3}">
+
+      <label for="Telefone">Telefone</label>
+      <input type="number" name="Telefone" id="Telefone" placeholder="(00)90000-0000">
+
+      <label for="cpf">CPF:</label>
+    <input 
+      type="text" 
+      name="cpf" 
+      id="cpf" 
+      placeholder="000.000.000-00"
+      pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+      title="Digite um CPF no formato 000.000.000-00"
+      required
+      
+
+      <br><br>
+      <button type="submit">Cadastrar</button>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+@charset "UFT-8";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* 🔹 Header principal */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 10px 25px;
+  height: 65px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.icon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
+
+
+.logo {
+  height: 55px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 900px) {
+  .header {
+    padding: 8px 15px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ---------------- CONTEÚDO PRINCIPAL ---------------- */
+.container {
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* --- GALERIA --- */
+.galeria {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.miniaturas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.miniaturas img {
+  width: 90px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.miniaturas img:hover {
+  transform: scale(1.05);
+}
+
+.img-principal {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* --- DETALHES --- */
+.detalhes {
+  flex: 1;
+}
+
+.preco-antigo {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.preco {
+  font-size: 28px;
+  color: #111;
+  margin-top: -10px;
+}
+
+.desconto {
+  color: #1ea358;
+  font-weight: bold;
+}
+
+.tamanhos button {
+  border: 1px solid #ccc;
+  background: white;
+  margin-right: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tamanhos button:hover {
+  background: #000;
+  color: white;
+}
+
+.btn-comprar {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #1ea358;
+}
+
+.frete {
+  margin-top: 20px;
+}
+
+.frete input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 150px;
+}
+
+.frete button {
+  background-color: #1ea358;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00000059;
+  color: white;
+  margin-top: 110px;
+}

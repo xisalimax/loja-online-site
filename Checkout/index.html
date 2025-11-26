@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left"><button class="icon-btn"><img src="menu.png" alt="Menu"></button>
+  <img src="logo.png" alt="Logo da Loja" class="site-logo">
+  </div>
+  <div class="logo">Checkout</div>
+  <div class="header-right">
+    <button class="icon-btn"><img src="lupa.png" alt="Buscar"></button>
+    <button class="icon-btn"><img src="carrinho.png" alt="Carrinho"></button>
+    <button class="icon-btn"><img src="perfil.png" alt="Perfil"></button>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <div class="product-header">
+      <div>Produtos</div><div>Qtd</div><div>Preço</div>
+    </div>
+    <div class="product-item">
+      <div class="product-info-with-image">
+        <img src="blusa.jpg" alt="Camiseta Regular Estampada" class="product-thumb">
+        <div class="product-info">
+          <p class="product-name">Camiseta Regular Estampada</p>
+          <p class="product-details">Preto - 205590-117</p>
+          <p class="product-details">Tamanho G</p>
+        </div>
+      </div>
+      <div class="product-quantity">1</div>
+      <div class="product-price">R$80,00</div>
+    </div>
+    <div class="total-box">Total: <span id="total-price">R$108,90</span></div>
+  </section>
+
+  <div class="two-columns">
+    <div>
+      <section class="card">
+        <h2 class="section-title">Dados Cadastrais</h2>
+        <div class="form-group"><label class="form-label" for="nome">Nome:</label><input class="form-input" type="text" id="nome" placeholder="Digite seu nome completo"></div>
+        <div class="form-group"><label class="form-label" for="email">Email:</label><input class="form-input" type="email" id="email" placeholder="seu@email.com"></div>
+        <div class="form-group"><label class="form-label" for="celular">Celular:</label><input class="form-input" type="tel" id="celular" placeholder="(00) 00000-0000"></div>
+        <div class="form-group"><label class="form-label" for="tipo">Tipo de cadastro:</label><input class="form-input" type="text" id="tipo" placeholder="Pessoa Física"></div>
+        <div class="form-group"><label class="form-label" for="cpf">CPF:</label><input class="form-input" type="text" id="cpf" placeholder="000.000.000-00"></div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Meus endereços</h2>
+          <!-- Campo para digitar o CEP -->
+  <div class="form-group">
+    <label class="form-label" for="cep">CEP:</label>
+    <input class="form-input" type="text" id="cep" placeholder="Digite seu CEP">
+   <button type="button" class="add-address-btn" id="search-address">Buscar Endereço</button>
+    </div>
+
+  <!-- Exibição automática do endereço -->
+  <div class="address-box" id="address-box" style="display:none;">
+  <p><strong>Logradouro:</strong> <span id="logradouro"></span></p>
+  <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+  <p><strong>Cidade:</strong> <span id="cidade"></span></p>
+  <p><strong>Estado:</strong> <span id="uf"></span></p>
+  </div>
+
+</section>
+</div>
+
+    <div>
+      <section class="card">
+        <h2 class="section-title">Entrega</h2>
+        <div class="radio-option">
+          <div class="radio-left">
+            <img src="fast.png" alt="Sudeste" class="delivery-icon" id="icon-sudeste">
+            <span class="shipping-price" id="price-sudeste">R$0,00</span>
+            <span class="shipping-days" id="days-sudeste">0 dias</span>
+          </div>
+          <label for="express">Sudeste</label>
+        </div>
+        <div class="radio-option">
+          <div class="radio-left">
+                 <img src="delivery.png" alt="Outras regiões" class="delivery-icon" id="icon-outros">
+                  <span class="shipping-price" id="price-outros">R$0,00</span>
+                  <span class="shipping-days" id="days-outros">0 dias</span>
+          </div>
+          <label for="standard">Outras regiões</label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Pagamentos</h2>
+        <div class="radio-option">
+          <div class="radio-left">
+            <input type="radio" name="pagamento" id="pix" checked>
+            <div class="payment-badges"><img src="pix.png" alt="PIX" class="payment-logo"><span>PIX</span></div>
+          </div>
+        </div>
+        <div class="radio-option">
+          <div class="radio-left">
+            <input type="radio" name="pagamento" id="cartao">
+            <div class="payment-badges"><img src="cartao.png" alt="Cartão" class="payment-logo"><span>Cartão</span></div>
+          </div>
+        </div>
+        <div class="radio-option">
+          <div class="radio-left">
+            <input type="radio" name="pagamento" id="boleto">
+            <div class="payment-badges"><img src="boleto.png" alt="Boleto" class="payment-logo"><span>Boleto bancário</span></div>
+          </div>
+        </div>
+        <a href="#" class="payment-link">Mudar Forma de Pagamento</a>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Mensagens</h2>
+        <div class="form-group"><label class="form-label" for="mensagem">Gostaria de mandar alguma observação?</label><textarea class="form-textarea" id="mensagem" placeholder="Digite sua mensagem aqui..."></textarea></div>
+      </section>
+    </div>
+  </div>
+</div>
+  <div class="btn-container">
+    <button class="btn-primary">Finalizar compra</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

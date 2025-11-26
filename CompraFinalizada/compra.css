@@ -1,0 +1,119 @@
+:root {
+    --cor-fundo: #ebebeb;
+    --cor-card: #e0e0e0;
+    --cor-botao: #556B2F;
+    --cor-botao-hover: #6B8E23;
+    --cor-botao-texto: #ffffff;
+    --cor-texto: #1a1a1a;
+    --cor-borda: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.logo, h2 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: var(--cor-card);
+    border-bottom: 1px solid var(--cor-borda);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.site-logo {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.finalizado-card {
+    background-color: var(--cor-card);
+    border-radius: 6px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid var(--cor-borda);
+}
+
+.finalizado-icone {
+    font-size: 60px;
+    color: var(--cor-botao);
+    font-weight: bold;
+}
+
+.finalizado-titulo {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.finalizado-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-finalizado {
+    padding: 0.8rem;
+    background-color: var(--cor-botao);
+    color: var(--cor-botao-texto);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-finalizado:hover {
+    background-color: var(--cor-botao-hover);
+}
+

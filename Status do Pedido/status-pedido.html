@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Status do Pedido</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <button class="menu-btn" aria-label="Menu">
+      <img src="./images/menu.png" alt="Menu">
+    </button>
+
+    <!-- Logo sem link, à direita do menu -->
+    <img class="logo-img" src="./images/logo.png" alt="Logo">
+  </div>
+
+  <div class="header-right">
+    <button class="icon-btn search-btn" aria-label="Pesquisar">
+      <img src="./images/lupa.png" alt="Lupa">
+    </button>
+
+    <button class="icon-btn cart-btn" aria-label="Carrinho">
+      <img src="./images/carrinho.png" alt="Carrinho">
+    </button>
+
+    <button class="icon-btn profile-btn" aria-label="Perfil">
+      <img src="./images/perfil.png" alt="Perfil">
+    </button>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h2 class="section-title">Pedido #12345</h2>
+    <p class="order-status">Status: <span class="status-label">Em Transporte</span></p>
+    <div class="progress-bar">
+      <div class="progress-step completed">Pedido Realizado</div>
+      <div class="progress-step completed">Pagamento Confirmado</div>
+      <div class="progress-step active">Em Transporte</div>
+      <div class="progress-step">Entregue</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">Detalhes do Pedido</h2>
+    <p><strong>Data:</strong> 18/10/2025</p>
+    <p><strong>Total:</strong> R$108,90</p>
+    <p><strong>Forma de Pagamento:</strong> PIX</p>
+    <p><strong>Endereço de Entrega:</strong> Rua Exemplo, 123, Bairro, Cidade, Estado</p>
+  </section>
+
+  <div class="btn-container">
+    <button class="btn-primary" onclick="window.location.href='index.html'">Voltar para a Loja</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+:root {
+  --cor-fundo: #ebebeb;
+  --cor-card: #e0e0e0;
+  --cor-input: #f2f2f2;
+  --cor-texto: #1a1a1a;
+  --cor-texto-suave: #666666;
+  --cor-borda: #cccccc;
+  --cor-botao: #556B2F; 
+  --cor-botao-hover: #6B8E23;
+  --cor-botao-texto: #ffffff;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: var(--cor-texto);
+}
+
+p {
+  margin-bottom: 30px;
+  color: var(--cor-texto-suave);
+}
+
+/* Formulário */
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Card do formulário */
+fieldset {
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+  padding: 25px;
+  background-color: var(--cor-card);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do bloco */
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: var(--cor-texto);
+}
+
+/* Labels e inputs em lista */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: var(--cor-texto);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  color: var(--cor-texto);
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: var(--cor-texto-suave);
+}
+
+input:focus {
+  border-color: var(--cor-botao);
+  outline: none;
+  box-shadow: 0 0 4px var(--cor-botao);
+}
+
+/* Botão */
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--cor-botao);
+  color: var(--cor-botao-texto);
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--cor-botao-hover);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  fieldset {
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 0.9em;
+  }
+}
